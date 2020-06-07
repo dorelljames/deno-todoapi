@@ -1,0 +1,33 @@
+GET http://localhost:3000
+
+### GET TODOS
+
+GET http://localhost:3000/todos
+
+### POST TODOS
+
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "description": "Hello JS Cebussss"
+}
+
+### GET TODO BY ID
+GET http://localhost:3000/todos/5edc53db009ca88d009e02e9
+Content-Type: application/json
+
+### UPDATE TODO BY ID
+
+PUT http://localhost:3000/todos/5edc4cf8007389100033d225
+Content-Type: application/json
+
+{
+  "description": "Updated description",
+  "completed": true
+}
+
+
+### DELETE TODO BY ID
+
+DELETE http://localhost:3000/todos/5edc4cf8007389100033d225
