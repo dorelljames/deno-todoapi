@@ -8,5 +8,5 @@ app.use(json());
 app.use(routes);
 app.use(handleError);
 
-app.listen(PORT);
-console.log(`App started at ${BASE_URL}:${PORT}`);
+app.listen(+PORT);
+console.log(`App started at ${BASE_URL}:${+PORT}`);
