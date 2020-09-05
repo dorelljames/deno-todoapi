@@ -1,4 +1,4 @@
-import { Router } from "https://deno.land/x/opine@master/mod.ts";
+import { Router } from "https://deno.land/x/opine@0.21.3/mod.ts";
 import {
   getAllTodos,
   createTodo,

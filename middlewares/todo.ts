@@ -3,13 +3,13 @@ import {
   Response,
   Request,
   NextFunction,
-} from "https://deno.land/x/opine@master/src/types.ts";
+} from "https://deno.land/x/opine@0.21.3/src/types.ts";
 import objectid from "https://cdn.pika.dev/validate-objectid";
 
 export const verifyId = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   if (!objectid(req.params.id)) {
     return res.setStatus(400).json({

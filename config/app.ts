@@ -2,7 +2,7 @@ import {
   Response,
   Request,
   NextFunction,
-} from "https://deno.land/x/opine@master/src/types.ts";
+} from "https://deno.land/x/opine@0.21.3/src/types.ts";
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 
 const env = config();
@@ -16,9 +16,9 @@ export const handleError = (
   err: any,
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
-  res.setStatus(500).json(
-    { message: "Internal Server Error", error: err.message },
-  );
+  res
+    .setStatus(500)
+    .json({ message: "Internal Server Error", error: err.message });
 };

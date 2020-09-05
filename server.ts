@@ -1,5 +1,5 @@
-import { opine, json } from "https://deno.land/x/opine@master/mod.ts";
-import * as flags from "https://deno.land/std@v0.50.0/flags/mod.ts";
+import { opine, json } from "https://deno.land/x/opine@0.21.3/mod.ts";
+import * as flags from "https://deno.land/std@0.68.0/flags/mod.ts";
 import { BASE_URL, PORT, handleError } from "./config/app.ts";
 import routes from "./routes/index.ts";
 
